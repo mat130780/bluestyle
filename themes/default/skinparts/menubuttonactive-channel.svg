@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="960" height="80" viewBox="0, 0, 960, 80">
+  <defs>
+    <radialGradient id="Gradient_1" gradientUnits="userSpaceOnUse" cx="480" cy="974.362" r="480" gradientTransform="matrix(1, 0, 0, 0.004, 0, -2.06)">
+      <stop offset="0" stop-color="#5F8DD3"/>
+      <stop offset="1" stop-color="#5F8DD3" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="Gradient_2" gradientUnits="userSpaceOnUse" cx="532.154" cy="158.059" r="504.757" gradientTransform="matrix(1.046, 0, 0, 0.004, -76.85, 77.374)">
+      <stop offset="0" stop-color="#5F8DD3"/>
+      <stop offset="1" stop-color="#5F8DD3" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="Layer_1">
+    <path d="M0.119,-0 L959.881,-0 C959.947,-0 960,0.053 960,0.119 L960,79.881 C960,79.947 959.947,80 959.881,80 L0.119,80 C0.053,80 -0,79.947 -0,79.881 L-0,0.119 C-0,0.053 0.053,-0 0.119,-0 z" fill="#2A44D1" id="rect4576" opacity="0.926"/>
+    <path d="M0.035,-0 L959.965,-0 C959.984,-0 960,0.016 960,0.035 L960,3.965 C960,3.984 959.984,4 959.965,4 L0.035,4 C0.016,4 -0,3.984 -0,3.965 L-0,0.035 C-0,0.016 0.016,-0 0.035,-0 z" fill="url(#Gradient_1)" id="rect4572"/>
+    <path d="M0.035,76 L959.965,76 C959.984,76 960,76.016 960,76.035 L960,79.965 C960,79.984 959.984,80 959.965,80 L0.035,80 C0.016,80 -0,79.984 -0,79.965 L-0,76.035 C-0,76.016 0.016,76 0.035,76 z" fill="url(#Gradient_2)" id="rect5081"/>
+  </g>
+</svg>

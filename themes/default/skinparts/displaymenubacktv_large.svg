@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="1920" height="1080" viewBox="0, 0, 1920, 1080">
+  <defs>
+    <linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="1176.046" y1="1054.548" x2="1823.087" y2="-448.905" gradientTransform="matrix(1, 0, 0, 1, 0, 27.638)">
+      <stop offset="0" stop-color="#323232"/>
+      <stop offset="1" stop-color="#D2D2D2"/>
+    </linearGradient>
+    <radialGradient id="Gradient_2" gradientUnits="userSpaceOnUse" cx="1335.16" cy="13818.836" r="355.27" gradientTransform="matrix(1.081, 0, 0, 0.011, -145.633, 540.591)">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="Gradient_3" gradientUnits="userSpaceOnUse" cx="1330.534" cy="141.712" r="355.27" gradientTransform="matrix(1.081, 0, 0, 0.011, -145.633, 102.591)">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="Gradient_4" gradientUnits="userSpaceOnUse" cx="1103.094" cy="373.024" r="4.945" gradientTransform="matrix(1, 0, 0, 58.87, 724.388, -21558.246)">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="Gradient_5" gradientUnits="userSpaceOnUse" cx="766.53" cy="373.024" r="4.945" gradientTransform="matrix(0.862, 0, 0, 58.87, 102.519, -21561.1)">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="Background">
+    <g>
+      <path d="M1918.734,1.004 C1918.879,1.004 1918.996,1.121 1918.996,1.266 L1918.996,1078.734 C1918.996,1078.879 1918.879,1078.996 1918.734,1078.996 L1.266,1078.996 C1.121,1078.996 1.004,1078.879 1.004,1078.734 L1.004,1.266 C1.004,1.121 1.121,1.004 1.266,1.004 L1918.734,1.004 z M766,108 L766,689.616 L1823.756,689.616 L1823.756,540 C1823.986,539.905 1823.905,539.986 1824,539.756 L1824,108.244 C1823.905,108.014 1823.986,108.095 1823.756,108 L766,108 z" fill="url(#Gradient_1)"/>
+      <path d="M1918.734,1.004 C1918.879,1.004 1918.996,1.121 1918.996,1.266 L1918.996,1078.734 C1918.996,1078.879 1918.879,1078.996 1918.734,1078.996 L1.266,1078.996 C1.121,1078.996 1.004,1078.879 1.004,1078.734 L1.004,1.266 C1.004,1.121 1.121,1.004 1.266,1.004 L1918.734,1.004 z M766,108 L766,689.616 L1823.756,689.616 L1823.756,540 C1823.986,539.905 1823.905,539.986 1824,539.756 L1824,108.244 C1823.905,108.014 1823.986,108.095 1823.756,108 L766,108 z" fill-opacity="0" stroke="#000000" stroke-width="2.009" stroke-linecap="square" stroke-linejoin="round"/>
+    </g>
+    <path d="M766.181,687.133 L1828.819,687.133 C1828.919,687.133 1829,687.192 1829,687.264 L1829,694.736 C1829,694.808 1828.919,694.867 1828.819,694.867 L766.181,694.867 C766.081,694.867 766,694.808 766,694.736 L766,687.264 C766,687.192 766.081,687.133 766.181,687.133 z" fill="url(#Gradient_2)" id="rect4498-7"/>
+    <path d="M761.181,100.266 L1823.819,100.266 C1823.919,100.266 1824,100.325 1824,100.397 L1824,107.869 C1824,107.942 1823.919,108 1823.819,108 L761.181,108 C761.081,108 761,107.942 761,107.869 L761,100.397 C761,100.325 761.081,100.266 761.181,100.266 z" fill="url(#Gradient_3)" id="rect4498"/>
+    <path d="M1824.226,110.782 L1830.737,110.782 C1830.862,110.782 1830.963,110.923 1830.963,111.096 L1830.963,692.469 C1830.963,692.642 1830.862,692.782 1830.737,692.782 L1824.226,692.782 C1824.101,692.782 1824,692.642 1824,692.469 L1824,111.096 C1824,110.923 1824.101,110.782 1824.226,110.782 z" fill="url(#Gradient_4)" id="rect4462-2"/>
+    <path d="M760.226,107.929 L765.774,107.929 C765.899,107.929 766,108.07 766,108.243 L766,689.616 C766,689.789 765.899,689.929 765.774,689.929 L760.226,689.929 C760.101,689.929 760,689.789 760,689.616 L760,108.243 C760,108.07 760.101,107.929 760.226,107.929 z" fill="url(#Gradient_5)" id="rect4462"/>
+  </g>
+</svg>

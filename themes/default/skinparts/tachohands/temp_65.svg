@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="150" height="150" viewBox="0, 0, 150, 150">
+  <g id="Zeiger" opacity="0.8">
+    <path d="M74.976,75.088 L74.961,75.031 C74.672,73.952 75.285,72.85 76.331,72.569 L138.827,55.824 C139.873,55.543 140.956,56.191 141.245,57.271 L141.26,57.327 C141.549,58.407 140.936,59.509 139.89,59.789 L77.394,76.535 C76.348,76.815 75.266,76.168 74.976,75.088 z" fill="#FF0000" id="rect4647-0"/>
+  </g>
+</svg>

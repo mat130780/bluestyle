@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="157.101" height="85.958" viewBox="0, 0, 157.101, 85.958">
+  <defs>
+    <radialGradient id="Gradient_1" gradientUnits="userSpaceOnUse" cx="64.567" cy="42.024" r="45.588" gradientTransform="matrix(2.178, -0, 0, 2.189, -24.609, -32.379)">
+      <stop offset="0" stop-color="#EF2929"/>
+      <stop offset="1" stop-color="#CC0000"/>
+    </radialGradient>
+    <radialGradient id="Gradient_2" gradientUnits="userSpaceOnUse" cx="103.736" cy="192.943" r="49.059" gradientTransform="matrix(1.151, 0, 0, 0.304, -4.576, 26.098)">
+      <stop offset="0" stop-color="#000000"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="Gradient_3" gradientUnits="userSpaceOnUse" cx="65.373" cy="42.673" r="45.588" gradientTransform="matrix(2.117, -0, 0, 2.127, -23.639, -30.405)">
+      <stop offset="0" stop-color="#EF2929"/>
+      <stop offset="1" stop-color="#CC0000"/>
+    </radialGradient>
+    <radialGradient id="Gradient_4" gradientUnits="userSpaceOnUse" cx="43.131" cy="-12.292" r="40.765" gradientTransform="matrix(3.659, -0, 0, 2.081, -62.416, 12.762)">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="Calque_1">
+    <g id="path2996">
+      <path d="M42.082,84.401 C19.202,84.401 0.644,65.875 0.644,42.995 C0.644,20.115 19.201,1.557 42.082,1.557 L115.051,1.557 C137.931,1.557 156.457,20.114 156.457,42.995 C156.457,65.875 137.931,84.401 115.051,84.401 z" fill="#1FAE30"/>
+      <path d="M42.082,84.401 C19.202,84.401 0.644,65.875 0.644,42.995 C0.644,20.115 19.201,1.557 42.082,1.557 L115.051,1.557 C137.931,1.557 156.457,20.114 156.457,42.995 C156.457,65.875 137.931,84.401 115.051,84.401 z" fill-opacity="0" stroke="#1ED841" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="path3835" opacity="0.15">
+      <path d="M156.435,41.857 C156.435,64.226 138.339,82.36 116.016,82.36 C93.692,82.36 75.596,64.226 75.596,41.857 C75.596,19.487 93.692,1.353 116.016,1.353 C138.339,1.353 156.435,19.487 156.435,41.857 z" fill="url(#Gradient_1)"/>
+      <path d="M156.435,41.857 C156.435,64.226 138.339,82.36 116.016,82.36 C93.692,82.36 75.596,64.226 75.596,41.857 C75.596,19.487 93.692,1.353 116.016,1.353 C138.339,1.353 156.435,19.487 156.435,41.857 z" fill-opacity="0" stroke="#808080" stroke-width="2.888" stroke-opacity="0.892" stroke-linecap="square" stroke-linejoin="round"/>
+    </g>
+    <path d="M171.214,84.678 C171.214,92.904 145.944,99.573 114.771,99.573 C83.599,99.573 58.328,92.904 58.328,84.678 C58.328,76.452 83.599,69.783 114.771,69.783 C145.944,69.783 171.214,76.452 171.214,84.678 z" fill="url(#Gradient_2)" id="path2226" opacity="0.04"/>
+    <g id="path2525">
+      <path d="M154.03,43.129 C154.03,64.871 136.442,82.496 114.745,82.496 C93.049,82.496 75.46,64.871 75.46,43.129 C75.46,21.387 93.049,3.762 114.745,3.762 C136.442,3.762 154.03,21.387 154.03,43.129 z" fill="url(#Gradient_3)"/>
+      <path d="M154.03,43.129 C154.03,64.871 136.442,82.496 114.745,82.496 C93.049,82.496 75.46,64.871 75.46,43.129 C75.46,21.387 93.049,3.762 114.745,3.762 C136.442,3.762 154.03,21.387 154.03,43.129 z" fill-opacity="0" stroke="#CC0000" stroke-width="0.963" stroke-linecap="square" stroke-linejoin="round"/>
+    </g>
+    <path d="M150.836,43.129 C150.836,63.045 134.691,79.191 114.774,79.191 C94.858,79.191 78.713,63.045 78.713,43.129 C78.713,23.213 94.858,7.068 114.774,7.068 C134.691,7.068 150.836,23.213 150.836,43.129 z" fill-opacity="0" stroke="#F77D7D" stroke-width="1" stroke-linecap="square" stroke-linejoin="round" id="path2527"/>
+    <path d="M114.284,5.5 C94.594,5.748 78.523,21.154 77.244,40.58 C96.425,48.473 120.737,36.03 149.812,29.975 C147.652,21.358 135.529,5.5 114.773,5.5 C114.613,5.5 114.447,5.497 114.284,5.5 z" fill="url(#Gradient_4)" id="path2529" opacity="0.6"/>
+  </g>
+</svg>
