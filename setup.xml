@@ -3,19 +3,19 @@
 
 <setup>
     <menu>
-        <parameter type="bool" name="showdevices" displaytext="{tr(showdevices)}">0</parameter>
+        <parameter type="bool" name="showdevices" displaytext="{tr(showdevices)}">1</parameter>
         <parameter type="bool" name="showposter" displaytext="{tr(showpostertext)}">1</parameter>
         <parameter type="bool" name="showmainmenuicons" displaytext="{tr(showmainmenuicons)}">1</parameter>
-        <parameter type="int" name="fadetime" min="0" max="1000" displaytext="{tr(fadetext)}">300</parameter>
-        <parameter type="int" name="shifttimechannel" min="0" max="1000" displaytext="{tr(shiftchanneltext)}">0</parameter>
-        <parameter type="int" name="shifttimevolume" min="0" max="1000" displaytext="{tr(shiftvolumetext)}">0</parameter>
+        <parameter type="int" name="fadetime" min="0" max="1000" displaytext="{tr(fadetext)}">200</parameter>
+        <parameter type="int" name="shifttimechannel" min="0" max="1000" displaytext="{tr(shiftchanneltext)}">270</parameter>
+        <parameter type="int" name="shifttimevolume" min="0" max="1000" displaytext="{tr(shiftvolumetext)}">150</parameter>
         <parameter type="int" name="shifttimereplay" min="0" max="1000" displaytext="{tr(shiftreplaytext)}">0</parameter>
-        <parameter type="int" name="shifttimemessage" min="0" max="1000" displaytext="{tr(shiftmessagetext)}">0</parameter>
+        <parameter type="int" name="shifttimemessage" min="0" max="1000" displaytext="{tr(shiftmessagetext)}">250</parameter>
         <parameter type="int" name="shifttimemenu" min="0" max="1000" displaytext="{tr(shiftmenutext)}">0</parameter>
-        <parameter type="int" name="nummenuitemsmain" min="6" max="30" displaytext="{tr(nummenuitemsmain)}">10</parameter>
-        <parameter type="int" name="nummenuitems" min="6" max="30" displaytext="{tr(nummenuitems)}">10</parameter>
-        <parameter type="int" name="nummenuitemsdefault" min="6" max="30" displaytext="{tr(nummenuitemsdefault)}">16</parameter>
-        <parameter type="bool" name="showsubtitle" displaytext="{tr(showsubtitle)}">1</parameter>
+        <parameter type="int" name="nummenuitemsmain" min="6" max="30" displaytext="{tr(nummenuitemsmain)}">14</parameter>
+        <parameter type="int" name="nummenuitems" min="6" max="30" displaytext="{tr(nummenuitems)}">13</parameter>
+        <parameter type="int" name="nummenuitemsdefault" min="6" max="30" displaytext="{tr(nummenuitemsdefault)}">18</parameter>
+        <parameter type="bool" name="showsubtitle" displaytext="{tr(showsubtitle)}">0</parameter>
     </menu>
 
     <translations>
