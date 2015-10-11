@@ -203,10 +203,10 @@
             <drawtext align="center" y="90%" font="{regular}" fontsize="12%" color="{clrWhite}" text="PV energy: {pvenergy} kWh" />
         </area>
         <area x="64%" y="67%" width="11%" height="24%" layer="4">
-            <drawtext align="center" y="90%" font="{regular}" fontsize="12%" color="{clrWhite}" text="Fan: {fanspeed} rpm" />
+            <drawtext align="center" y="90%" font="{regular}" fontsize="12%" color="{clrWhite}" text="CPU fan: {fanspeedcpu} rpm" />
         </area>
         <area x="76%" y="67%" width="11%" height="24%" layer="4">
-            <drawtext align="center" y="90%" font="{regular}" fontsize="12%" color="{clrWhite}" text="Fan: {fanspeed} rpm" />
+            <drawtext align="center" y="90%" font="{regular}" fontsize="12%" color="{clrWhite}" text="Case fan: {fanspeedcase} rpm" />
         </area>
     </customtokens>
 
