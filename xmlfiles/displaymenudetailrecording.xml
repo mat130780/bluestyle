@@ -267,7 +267,7 @@
     -->
     <tablabels>
         <area x="1%" y="87%" width="98%" height="5%" layer="3">
-            <drawrectangle x="0" y="1" width="100%" height="1" color="{clrBorder}" />
+            <drawrectangle x="0" y="1" width="100%" height="1" color="{clrWhite}" />
             <loop name="tabs" x="0" y="0" orientation="horizontal">
                 <drawrectangle condition="{tabs[current]}" x="0" y="1" width="{width(label)}" height="100%" color="{clrBorder}" />
                 <drawrectangle condition="not{tabs[current]}" x="0" y="1" width="{width(label)}" height="100%" color="{clrWhite}" />
