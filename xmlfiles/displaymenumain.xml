@@ -109,6 +109,7 @@
 				<drawtext condition="{devices[recording]} ++ not{devices[livetv]}" x="{width(label)}*1.3" y="{areaheight}*0.04" font="{regular}" fontsize="30%" color="{clrRed}" text="Rec." />
 				<drawtext condition="not{devices[recording]} ++ {devices[livetv]}" x="{width(label)}*1.3" y="{areaheight}*0.04" font="{regular}" fontsize="30%" color="{clrWhite}" text="LiveTV" />
 				<drawtext x="15" y="{rowheight}*0.52" font="{regular}" fontsize="30%" color="{clrWhite}" text="{devices[channelname]}" />
+				<drawtext condition="empty{devices[channelname]}" x="15" y="{rowheight}*0.52" font="{regular}" fontsize="30%" color="{clrWhite}" text="- not tuned -" />
 			</loop>  
 		</area>
 		<!--<area condition="eq({numdevices}, 1})" x="87%" y="82%" width="16%" height="23%" layer="4">
@@ -118,6 +119,7 @@
 				<drawtext condition="{devices[recording]} ++ not{devices[livetv]}" x="{width(label)}*1.3" y="{areaheight}*0.04" font="{regular}" fontsize="10%" color="{clrRed}" text="Rec." />
 				<drawtext condition="not{devices[recording]} ++ {devices[livetv]}" x="{width(label)}*1.3" y="{areaheight}*0.04" font="{regular}" fontsize="10%" color="{clrWhite}" text="LiveTV" />
 				<drawtext x="15" y="{rowheight}*0.22" font="{regular}" fontsize="10%" color="{clrWhite}" text="{devices[channelname]}" />
+				<drawtext condition="empty{devices[channelname]}" x="15" y="{rowheight}*0.52" font="{regular}" fontsize="10%" color="{clrWhite}" text="- not tuned -" />
 			</loop>  
 		</area>--> 
 	</devices>
