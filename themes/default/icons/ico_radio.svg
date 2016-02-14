@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="150" height="50" viewBox="0, 0, 150, 50">
+  <defs>
+    <linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="105.172" y1="1028.686" x2="153.457" y2="988.419" gradientTransform="matrix(1, 0, 0, 1, 0, -1002.362)">
+      <stop offset="0" stop-color="#00284A"/>
+      <stop offset="1" stop-color="#000000"/>
+    </linearGradient>
+  </defs>
+  <g id="Ebene_1">
+    <g id="rect5883">
+      <path d="M1.857,0.979 L147.768,0.979 C148.253,0.979 148.646,1.24 148.646,1.562 L148.646,48.438 C148.646,48.76 148.253,49.021 147.768,49.021 L1.857,49.021 C1.372,49.021 0.979,48.76 0.979,48.438 L0.979,1.562 C0.979,1.24 1.372,0.979 1.857,0.979 z" fill="url(#Gradient_1)"/>
+      <path d="M1.857,0.979 L147.768,0.979 C148.253,0.979 148.646,1.24 148.646,1.562 L148.646,48.438 C148.646,48.76 148.253,49.021 147.768,49.021 L1.857,49.021 C1.372,49.021 0.979,48.76 0.979,48.438 L0.979,1.562 C0.979,1.24 1.372,0.979 1.857,0.979 z" fill-opacity="0" stroke="#FFFFFF" stroke-width="1.957" stroke-linecap="square" stroke-linejoin="bevel"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 73.188, 25.625)">
+      <tspan x="-56.037" y="10.5" font-family="HelveticaNeue" font-size="34" fill="#FFFFFF">r</tspan>
+      <tspan x="-44.715" y="10.5" font-family="HelveticaNeue" font-size="30" fill="#FFFFFF"> </tspan>
+      <tspan x="-36.375" y="10.5" font-family="HelveticaNeue" font-size="34" fill="#FFFFFF">a</tspan>
+      <tspan x="-18.117" y="10.5" font-family="HelveticaNeue" font-size="30" fill="#FFFFFF"> </tspan>
+      <tspan x="-9.777" y="10.5" font-family="HelveticaNeue" font-size="34" fill="#FFFFFF">d</tspan>
+      <tspan x="10.385" y="10.5" font-family="HelveticaNeue" font-size="30" fill="#FFFFFF"> </tspan>
+      <tspan x="18.725" y="10.5" font-family="HelveticaNeue" font-size="34" fill="#FFFFFF">i</tspan>
+      <tspan x="26.273" y="10.5" font-family="HelveticaNeue" font-size="30" fill="#FFFFFF"> </tspan>
+      <tspan x="34.613" y="10.5" font-family="HelveticaNeue" font-size="34" fill="#FFFFFF">o</tspan>
+    </text>
+  </g>
+</svg>

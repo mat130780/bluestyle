@@ -52,27 +52,29 @@
     <detailheader>
         <area x="0%" y="0%" width="100%" height="25%" layer="2">
             <drawimage imagetype="skinpart" path="epgdetailheader" x="0" y="0" width="100%" height="100%"/>
+        </area>
+        <area x="0%" y="0%" width="100%" height="25%" layer="3">
             <drawimage imagetype="skinpart" path="recording-reel" x="23%" y="5%" width="7%" height="28%"/>
         </area>
         <area condition="not{ismovie}++not{isseries}" x="1%" y="0%" width="56%" height="25%" layer="3">
-            <drawtext x="3%" y="4%" font="{regular}" fontsize="30%" color="{clrWhite}" text="Aufzeichnung" />
-            <drawtext x="3%" y="45%" font="{regular}" fontsize="14%" color="{clrWhite}" text="{date} {time} ({duration} min.)" />
-            <drawtext x="3%" y="60%" width="{areawidth} - {posx(poster)} - {width(poster)} - 20" font="{semibold}" fontsize="23%" color="{clrWhite}" text="{epgname}" />
-            <drawtext x="3%" y="80%" width="{areawidth} - {posx(poster)} - {width(poster)} - 20" font="{regular}" fontsize="13%" color="{clrWhite}" text="{shorttext}" />
+            <drawtext x="2%" y="4%" font="{regular}" fontsize="30%" color="{clrWhite}" text="Aufzeichnung" />
+            <drawtext x="2%" y="45%" font="{regular}" fontsize="14%" color="{clrWhite}" text="{date} {time} ({duration} min.)" />
+            <drawtext x="2%" y="60%" width="{areawidth} - {posx(poster)} - {width(poster)} - 20" font="{semibold}" fontsize="23%" color="{clrWhite}" text="{epgname}" />
+            <drawtext x="2%" y="80%" width="{areawidth} - {posx(poster)} - {width(poster)} - 20" font="{regular}" fontsize="13%" color="{clrWhite}" text="{shorttext}" />
         </area>
         <area condition="{isseries}" x="1%" y="0%" width="56%" height="25%" layer="3">
             <drawimage name="banner" imagetype="image" path="{bannerpath}" align="right" valign="bottom" y="75%" width="40%" height="54%"/>
-            <drawtext x="3%" y="4%" font="{regular}" fontsize="30%" color="{clrWhite}" text="Aufzeichnung" />
-            <drawtext x="3%" y="45%" font="{regular}" fontsize="14%" color="{clrWhite}" text="{date} {time} ({duration} min.)" />
-            <drawtext x="3%" y="60%" width="{areawidth} - {posx(poster)} - {width(poster)} - 20" font="{semibold}" fontsize="23%" color="{clrWhite}" text="{epgname}" />
-            <drawtext x="3%" y="80%" width="{areawidth} - {posx(poster)} - {width(poster)} - 20" font="{regular}" fontsize="13%" color="{clrWhite}" text="{shorttext}" />
+            <drawtext x="2%" y="4%" font="{regular}" fontsize="30%" color="{clrWhite}" text="Aufzeichnung" />
+            <drawtext x="2%" y="45%" font="{regular}" fontsize="14%" color="{clrWhite}" text="{date} {time} ({duration} min.)" />
+            <drawtext x="2%" y="60%" width="{areawidth} - {posx(poster)} - {width(poster)} - 20" font="{semibold}" fontsize="23%" color="{clrWhite}" text="{epgname}" />
+            <drawtext x="2%" y="80%" width="{areawidth} - {posx(poster)} - {width(poster)} - 20" font="{regular}" fontsize="13%" color="{clrWhite}" text="{shorttext}" />
         </area>
         <area condition="{ismovie}" x="1%" y="0%" width="56%" height="25%" layer="3">
             <drawimage name="poster" imagetype="image" path="{posterpath}" align="right" valign="bottom" y="75%" width="40%" height="54%"/>
-            <drawtext x="3%" y="4%" font="{regular}" fontsize="30%" color="{clrWhite}" text="Aufzeichnung" />
-            <drawtext x="3%" y="45%" font="{regular}" fontsize="14%" color="{clrWhite}" text="{date} {time} ({duration} min.)" />
-            <drawtext x="3%" y="60%" width="{areawidth} - {posx(poster)} - {width(poster)} - 20" font="{semibold}" fontsize="23%" color="{clrWhite}" text="{epgname}" />
-            <drawtext x="3%" y="80%" width="{areawidth} - {posx(poster)} - {width(poster)} - 20" font="{regular}" fontsize="13%" color="{clrWhite}" text="{shorttext}" />
+            <drawtext x="2%" y="4%" font="{regular}" fontsize="30%" color="{clrWhite}" text="Aufzeichnung" />
+            <drawtext x="2%" y="45%" font="{regular}" fontsize="14%" color="{clrWhite}" text="{date} {time} ({duration} min.)" />
+            <drawtext x="2%" y="60%" width="{areawidth} - {posx(poster)} - {width(poster)} - 20" font="{semibold}" fontsize="23%" color="{clrWhite}" text="{epgname}" />
+            <drawtext x="2%" y="80%" width="{areawidth} - {posx(poster)} - {width(poster)} - 20" font="{regular}" fontsize="13%" color="{clrWhite}" text="{shorttext}" />
         </area>
     </detailheader>
 

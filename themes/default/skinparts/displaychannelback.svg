@@ -2,9 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="1920" height="324" viewBox="0, 0, 1920, 324">
   <g id="Layer1">
-    <g id="shapePath1">
-      <path d="M0.502,323.498 L0.502,50.97 L1919.5,53.347 L1919.5,323.498 L0.502,323.498 z" fill="#000000" fill-opacity="0.333"/>
-      <path d="M0.502,323.498 L0.502,50.97 L1919.5,53.347 L1919.5,323.498 L0.502,323.498 z" fill-opacity="0" stroke="#000000" stroke-width="1.004" stroke-opacity="0.243" stroke-miterlimit="2"/>
-    </g>
+    <path d="M0.502,323.498 L0.502,50.97 L1919.5,53.347 L1919.5,323.498 L0.502,323.498 z" fill="#000000" fill-opacity="0.25"/>
+    <path d="M0.502,323.498 L0.502,50.97 L1919.5,53.347 L1919.5,323.498 L0.502,323.498 z" fill-opacity="0" stroke="#000000" stroke-width="1.004" stroke-opacity="0.243" stroke-miterlimit="2"/>
   </g>
 </svg>

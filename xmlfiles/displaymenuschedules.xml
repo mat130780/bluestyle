@@ -261,7 +261,7 @@
         {schedule[start]}         start time of event in hh:mm
         {schedule[stop]}          stop time of event in hh:mm
         -->
-        <currentelement delay="200" fadetime="0">
+        <currentelement>
             <area x="55%" y="52%" width="45%" height="48%" layer="2">
                 <drawimage imagetype="skinpart" path="displaymenucurrentback" x="0" y="0" width="100%" height="100%"/>
             </area>

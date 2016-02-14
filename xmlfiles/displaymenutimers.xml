@@ -51,12 +51,14 @@
                 <drawtext condition="{current}" x="0" y="35%" font="{regular}" fontsize="70%" align="left" valign="center" color="{clrWhite}" text="{timerstart}" />
             </area>
             <area condition="not{separator}" x="18%" width="39%" layer="4">
-                <drawimage condition="{flagactive} ++ {flagrecording}" animtype="blink" animfreq="1000" imagetype="icon" path="ico_timer_rec_on" align="right" valign="center" width="44%" height="44%" />
                 <drawimage condition="{flagactive}" imagetype="icon" path="ico_timer_active" align="right" valign="center" width="44%" height="44%" />
                 <drawimage condition="not{flagactive}" imagetype="icon" path="ico_timer_inactive" align="right" valign="center" width="44%" height="44%" />
             </area>
+            <area condition="not{separator}" x="18%" width="39%" layer="5">
+                <drawimage condition="{flagactive} ++ {flagrecording}" animtype="blink" animfreq="1000" imagetype="icon" path="ico_timer_rec_on" align="right" valign="center" width="44%" height="44%" />
+            </area>
             <areascroll scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium"  condition="not{separator}" x="23%" width="23%" layer="3">
-                <drawtext condition="not{current}"  name="menutext" x="0" y="35%" font="{regular}" fontsize="60%" align="left" valign="center" color="{clrGray}" text="{title}" />
+                <drawtext condition="not{current}" x="0" y="35%" font="{regular}" fontsize="60%" align="left" valign="center" color="{clrGray}" text="{title}" />
                 <drawtext condition="{current}" name="menutext" x="0" y="35%" font="{regular}" fontsize="60%" align="left" valign="center" color="{clrWhite}" text="{title}" />
             </areascroll>
             <area condition="{separator}" x="1%" width="50%" layer="3">
@@ -96,7 +98,7 @@
         {flagrecording}     true if is recording currently
         {flagpending}       true if timer is pending
         -->
-        <currentelement delay="500" fadetime="0">
+        <currentelement>
             <area condition="{flagactive}" x="55%" y="52%" width="45%" height="48%" layer="2">
                 <drawimage imagetype="skinpart" path="displaymenucurrentback" x="0" y="0" width="100%" height="100%"/>
             </area>

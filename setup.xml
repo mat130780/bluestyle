@@ -12,6 +12,7 @@
         <parameter type="int" name="shifttimereplay" min="0" max="1000" displaytext="{tr(shiftreplaytext)}">0</parameter>
         <parameter type="int" name="shifttimemessage" min="0" max="1000" displaytext="{tr(shiftmessagetext)}">250</parameter>
         <parameter type="int" name="shifttimemenu" min="0" max="1000" displaytext="{tr(shiftmenutext)}">0</parameter>
+        <parameter type="int" name="transparency" min="0" max="30" displaytext="{tr(transparency)}">20</parameter>
         <parameter type="int" name="nummenuitemsmain" min="6" max="30" displaytext="{tr(nummenuitemsmain)}">14</parameter>
         <parameter type="int" name="nummenuitems" min="6" max="30" displaytext="{tr(nummenuitems)}">13</parameter>
         <parameter type="int" name="nummenuitemsdefault" min="6" max="30" displaytext="{tr(nummenuitemsdefault)}">18</parameter>
@@ -78,6 +79,10 @@
             <trans lang="en_EN">Show shorttexts in schedules menus</trans>
             <trans lang="de_DE">Kurztexte im Programm Menü anzeigen</trans>
             <trans lang="fi_FI">Näytä lyhyet kuvaukset ohjelmaoppaassa</trans>
+        </token>
+        <token name="tr(transparency)">
+            <trans lang="en_EN">Transpareny channel, replay and volume</trans>
+            <trans lang="de_DE">Transparenz bei Kanal,Wiedergabe und Lautstärke</trans>
         </token>
     </translations>
 </setup>

@@ -12,10 +12,6 @@
         <area x="17%" y="80%" width="69%" height="14%" layer="2">
             <drawimage imagetype="skinpart" path="displaychannelbackepg" x="0" y="0" width="100%" height="100%"/>
         </area>
-        <!-- channel logo background -->
-        <area condition="{showchannellogoback}" x="1%" y="77%" width="14%" height="20%" layer="2">
-            <drawimage imagetype="skinpart" path="displaychannellogoback" x="0" y="0" width="100%" height="100%"/>
-        </area>        
         <!-- watch background -->
         <area x="88%" y="77%" width="{areaheight}*0.18" height="{areaheight}*0.18" layer="2">
             <drawimage imagetype="skinpart" path="watchback" x="0" y="0" width="100%" height="100%"/>
@@ -61,17 +57,27 @@
     {nextrecording}                    true if next Schedule will be recorded
     -->
     <epginfo>
-        <area x="17%" y="80%" width="68%" height="7%" layer="3">
+        <area condition="isset{currentsubtitle}" x="17%" y="80%" width="68%" height="7%" layer="3">
             <drawtext name="starttime" x="1%" valign="center" font="{regular}" fontsize="80%" color="{clrWhite}" text="{currentstart}" />
             <drawtext align="right" name="elapsed" valign="center" font="{regular}" fontsize="75%" color="{clrWhite}" text="{currentelapsed}/{currentduration} min" />
             <drawtext x="{width(starttime)} + 40" y="0" width="{areawidth} - {width(starttime)} - {width(elapsed)} - 45" font="{regular}" fontsize="70%" color="{clrWhite}" text="{currenttitle}" />
             <drawtext x="{width(starttime)} + 40" y="56%" width="{areawidth} - {width(starttime)} - {width(elapsed)} - 45" font="{regular}" fontsize="45%" color="{clrWhite}" text="{currentsubtitle}" />
         </area>
-        <area x="17%" y="87%" width="68%" height="7%" layer="3">
+        <area condition="empty{currentsubtitle}" x="17%" y="80%" width="68%" height="7%" layer="3">
+            <drawtext name="starttime" x="1%" valign="center" font="{regular}" fontsize="80%" color="{clrWhite}" text="{currentstart}" />
+            <drawtext align="right" name="elapsed" valign="center" font="{regular}" fontsize="75%" color="{clrWhite}" text="{currentelapsed}/{currentduration} min" />
+            <drawtext x="{width(starttime)} + 40" valign="center" width="{areawidth} - {width(starttime)} - {width(elapsed)} - 45" font="{regular}" fontsize="70%" color="{clrWhite}" text="{currenttitle}" />
+        </area>
+        <area condition="isset{nextsubtitle}" x="17%" y="87%" width="68%" height="7%" layer="3">
             <drawtext name="starttime" x="1%" valign="center" font="{regular}" fontsize="80%" color="{clrGray}" text="{nextstart}" />
             <drawtext align="right" name="duration" valign="center" font="{regular}" fontsize="75%" color="{clrGray}" text="{nextduration} min" />
             <drawtext x="{width(starttime)} + 40" y="0" width="{areawidth} - {width(starttime)} - {width(duration)} - 45" font="{regular}" fontsize="70%" color="{clrGray}" text="{nexttitle}" />
             <drawtext x="{width(starttime)} + 40" y="55%" width="{areawidth} - {width(starttime)} - {width(duration)} - 45" font="{regular}" fontsize="40%" color="{clrGray}" text="{nextsubtitle}" />
+        </area>
+        <area condition="empty{nextsubtitle}" x="17%" y="87%" width="68%" height="7%" layer="3">
+            <drawtext name="starttime" x="1%" valign="center" font="{regular}" fontsize="80%" color="{clrGray}" text="{nextstart}" />
+            <drawtext align="right" name="duration" valign="center" font="{regular}" fontsize="75%" color="{clrGray}" text="{nextduration} min" />
+            <drawtext x="{width(starttime)} + 40" valign="center" width="{areawidth} - {width(starttime)} - {width(duration)} - 45" font="{regular}" fontsize="70%" color="{clrGray}" text="{nexttitle}" />
         </area>
     </epginfo>
 
@@ -101,7 +107,8 @@
     -->
     <statusinfo>
         <area x="41%" y="95%" width="69%" height="4%" layer="3">
-            <drawimage condition="{isDolby}" imagetype="icon" path="ico_dolby" x="{areaheight}*6 + 93" y="0" width="{areaheight}*3" height="{areaheight}"/>
+            <drawimage condition="not{isRadio}++{isDolby}" imagetype="icon" path="ico_dolby" x="{areaheight}*6 + 93" y="0" width="{areaheight}*3" height="{areaheight}"/>
+            <drawimage condition="{isRadio}" imagetype="icon" path="ico_radio" x="{areaheight}*6 + 93" y="0" width="{areaheight}*3" height="{areaheight}"/>
             <drawimage condition="{hasVT}" imagetype="icon" path="ico_videotext" x="{areaheight}*9 + 103" y="0" width="{areaheight}" height="{areaheight}"/>
             <drawimage condition="{isEncrypted}" imagetype="icon" path="ico_crypted" x="{areaheight}*10 + 113" y="0" width="{areaheight}*2" height="{areaheight}"/>
             <drawimage condition="{isRecording}" imagetype="icon" path="ico_rec_on" x="0" y="0" width="{areaheight}" height="{areaheight}"/>
@@ -184,15 +191,12 @@
         <drawtext name="str" x="0" y="18" font="{regular}" fontsize="65%" color="{clrWhite}" text="STR: " />
         <drawtext x="{posx(str)}+{width(str)}" y="18" font="{regular}" fontsize="65%" color="{clrWhite}" text="{signalstrength}%" />
       </area>
-    </signalquality>
-
-    <!-- background of signalmeter, will only be drawn if signalquality was deleted -->
-    <signalqualityback>
-        <area x="17%" y="95%" width="15%" height="4%" layer="2">
+        <area x="17%" y="95%" width="15%" height="4%" layer="2" background="true">
             <drawimage imagetype="skinpart" path="signal" x="0" y="0" width="100%" height="45%"/>
             <drawimage imagetype="skinpart" path="signal" x="0" y="50%" width="100%" height="45%"/>
         </area>
-    </signalqualityback>
+    </signalquality>
+
 
     <!-- Available Variables devices:
     {numdevices}                number of available devices
@@ -231,7 +235,7 @@
     {mediaheight}                       height of image in pixel
     {isbanner}                          true if image is a banner, false if it is a poster
     -->
-    <scrapercontent detached="true" delay="250" fadetime="0">
+    <scrapercontent delay="150" fadetime="200" shifttime="0" shifttype="top" shiftmode="slowed">
         <area condition="{showposter}++{isbanner}" x="1%" y="3%" width="{areaheight}*0.13*{mediawidth}/{mediaheight}" height="13%" layer="7">
             <drawimage imagetype="image" path="{mediapath}" align="center" valign="center"  width="{areawidth}" height="{areaheight}"/>
         </area>
