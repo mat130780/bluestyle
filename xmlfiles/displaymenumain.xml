@@ -39,8 +39,12 @@
         <area x="40%" y="67%" width="59%" height="19%" layer="3">
             <drawimage imagetype="skinpart" path="tacho_temp_back" x="{areawidth}*0.61" y="3%" width="18%" height="98%"/>
         </area>
-        <!-- Tuner status -->
-        <area x="40%" y="67%" width="59%" height="17%" layer="3">
+        <!-- tacho PV -->
+        <area condition="{showpv}" x="40%" y="67%" width="59%" height="19%" layer="3">
+            <drawimage imagetype="skinpart" path="tacho_pv_back" x="{areawidth}*0.81" y="3%" width="18%" height="98%"/>
+        </area>
+        <!-- tuner status -->
+        <area condition="not{showpv}" x="40%" y="67%" width="59%" height="17%" layer="3">
             <drawimage imagetype="skinpart" path="tv_tuner" x="{areawidth}*0.81" y="0%" width="18%" height="98%"/>
         </area>
     </background>
@@ -68,7 +72,7 @@
     {timers[channelid]}          ChannelID of channel
     {timers[channellogoexists]}  true if channel logo exists
     -->
-    <timers delay="2000" shifttime="1000" startx="40%" starty="60%" shiftmode="slowed">
+    <timers delay="1000" shifttime="1300" startx="40%" starty="60%" shiftmode="slowed">
         <area x="40%" y="50%" width="55%" height="14%" layer="1">
             <drawrectangle condition="gt({numtimers}, 0)" x="0" y="0" width="{areawidth} / 5 - 5" height="{areaheight}" color="{clrBlackTrans}" />
             <drawrectangle condition="gt({numtimers}, 1)" x="{areawidth} / 5" y="0" width="{areawidth} / 5 - 5" height="{areaheight}" color="{clrBlackTrans}" />
@@ -101,7 +105,25 @@
         </area>
     </discusage>
 
-	<devices mode="light">
+    <!-- Available Variables devices:
+    {numdevices}                number of available devices
+    {devices[]}                 array with available devices
+    {devices[num]}              number of current device
+    {devices[type]}             type of device (DVB-S, DVB-C, ...)
+    {devices[istuned]}          true if device is currently tuned to a transponder
+    {devices[livetv]}           true if device is currently playing livetv
+    {devices[recording]}        true if device is currently recording
+    {devices[hascam]}           true if device has a CAM
+    {devices[cam]}              number of CAM
+    {devices[signalstrength]}   signalstrength of devcie
+    {devices[signalquality]}    signalstrength of devcie
+    {devices[channelnumber]}    number of the currently tuned channel
+    {devices[channelname]}      name of the currently tuned channel
+    {devices[channellogoexists]} true if a channel logo exists 
+    {devices[channelid]}        ID of the currently tuned channel
+    {devices[source]}           source of the currently tuned channel
+    -->
+	<devices condition="not{showpv}" mode="light">
 		<area x="87%" y="83%" width="16%" height="8%" layer="4">
 			<loop name="devices" x="0" y="3%" orientation="vertical" columnwidth="{areawidth}" rowheight="{areaheight}/2" overflow="cut">
 				<drawtext name="label" x="15" y="{areaheight}*0.04" font="{regular}" fontsize="30%" color="{clrWhite}" text="#{devices[num]}: {devices[type]}" />
@@ -123,25 +145,6 @@
 			</loop>  
 		</area>--> 
 	</devices>
-
-    <!-- Available Variables devices:
-    {numdevices}                number of available devices
-    {devices[]}                 array with available devices
-    {devices[num]}              number of current device
-    {devices[type]}             type of device (DVB-S, DVB-C, ...)
-    {devices[istuned]}          true if device is currently tuned to a transponder
-    {devices[livetv]}           true if device is currently playing livetv
-    {devices[recording]}        true if device is currently recording
-    {devices[hascam]}           true if device has a CAM
-    {devices[cam]}              number of CAM
-    {devices[signalstrength]}   signalstrength of devcie
-    {devices[signalquality]}    signalstrength of devcie
-    {devices[channelnumber]}    number of the currently tuned channel
-    {devices[channelname]}      name of the currently tuned channel
-    {devices[channellogoexists]} true if a channel logo exists 
-    {devices[channelid]}        ID of the currently tuned channel
-    {devices[source]}           source of the currently tuned channel
-    -->
 
     <!-- Available Variables systemload:
     {load}                      current system load
@@ -203,6 +206,14 @@
     sets these custom tokens with svdrpsend or dbus2vdr
     --> 
     <customtokens>
+        <area condition="{showpv}" x="40%" y="67%" width="59%" height="19%" layer="5">
+            <drawimage condition="gt({customint3}, 11600)" imagetype="skinpart" path="tachohands/pv_12000" x="{areawidth}*0.81" y="3%" width="18%" height="98%"/>
+            <drawimage condition="lt({customint3}, 12000)" imagetype="skinpart" path="tachohands/pv_{customint3}" x="{areawidth}*0.81" y="3%" width="18%" height="98%"/>
+        </area>
+        <area condition="{showpv}" x="88%" y="67%" width="11%" height="24%" layer="4">
+            <drawtext align="center" y="80%" font="{regular}" fontsize="12%" color="{clrWhite}" text="PV power: {customint3} W" />
+            <drawtext align="center" y="90%" font="{regular}" fontsize="12%" color="{clrWhite}" text="PV energy: {customint4} kWh" />
+        </area>
         <area x="64%" y="67%" width="11%" height="24%" layer="4">
             <drawtext align="center" y="90%" font="{regular}" fontsize="12%" color="{clrWhite}" text="CPU fan: {customint1} rpm" />
         </area>

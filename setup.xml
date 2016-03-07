@@ -16,6 +16,7 @@
         <parameter type="int" name="nummenuitemsmain" min="6" max="30" displaytext="{tr(nummenuitemsmain)}">14</parameter>
         <parameter type="int" name="nummenuitems" min="6" max="30" displaytext="{tr(nummenuitems)}">13</parameter>
         <parameter type="int" name="nummenuitemsdefault" min="6" max="30" displaytext="{tr(nummenuitemsdefault)}">18</parameter>
+        <parameter type="bool" name="showpv" displaytext="{tr(showpv)}">0</parameter>
         <parameter type="bool" name="showsubtitle" displaytext="{tr(showsubtitle)}">0</parameter>
     </menu>
 
@@ -79,6 +80,10 @@
             <trans lang="en_EN">Show shorttexts in schedules menus</trans>
             <trans lang="de_DE">Kurztexte im Programm Menü anzeigen</trans>
             <trans lang="fi_FI">Näytä lyhyet kuvaukset ohjelmaoppaassa</trans>
+        </token>
+        <token name="tr(showpv)">
+            <trans lang="en_EN">Show PV data in main menu</trans>
+            <trans lang="de_DE">PV-Daten im Hauptmenü anzeigen</trans>
         </token>
         <token name="tr(transparency)">
             <trans lang="en_EN">Transpareny channel, replay and volume</trans>

@@ -209,7 +209,7 @@
         </area>
 		<area x="2%" y="2%" width="62%" height="7%" layer="3">
 			<drawimage name="logo" imagetype="channellogo" path="{channelid}" x="0" y="1%" width="15%" height="90%" valign="center" />
-			<drawtext name="channel" x="{width(logo)}*1.2"  valign="center" font="{vdrosd}" fontsize="80%" color="{clrWhite}" text="{channelnumber} - {channelname}" />
+			<drawtext name="channel" x="{width(logo)}*1.2"  valign="center" font="{vdrOsd}" fontsize="80%" color="{clrWhite}" text="{channelnumber} - {channelname}" />
 		</area>
         <area x="1%" y="10%" width="56%" height="15%" layer="3">
             <drawimage condition="{isseries}++{banneravailable}++not{epgpicavailable}" imagetype="image" path="{bannerpath}" align="right" valign="center" width="{areawidth}/3" height="{areawidth}/3 * {bannerheight} / {bannerwidth}"/>
