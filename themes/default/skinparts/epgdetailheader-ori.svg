@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="1920" height="270" viewBox="0, 0, 1920, 270">
   <defs>
-    <linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="927.579" y1="1106.277" x2="921.317" y2="631.932" gradientTransform="matrix(1, 0, 0, 1, -2.02, -838.21)">
+    <linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="0.72" y1="972.46" x2="2208.183" y2="861.343" gradientTransform="matrix(1, 0, 0, 1, -2.02, -838.21)">
       <stop offset="0" stop-color="#282828"/>
       <stop offset="1" stop-color="#C1C1C1"/>
     </linearGradient>

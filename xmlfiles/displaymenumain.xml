@@ -72,7 +72,7 @@
     {timers[channelid]}          ChannelID of channel
     {timers[channellogoexists]}  true if channel logo exists
     -->
-    <timers delay="1000" shifttime="1300" startx="40%" starty="60%" shiftmode="slowed">
+    <timers delay="1500" shifttime="700" startx="40%" starty="60%" shiftmode="slowed">
         <area x="40%" y="50%" width="55%" height="14%" layer="1">
             <drawrectangle condition="gt({numtimers}, 0)" x="0" y="0" width="{areawidth} / 5 - 5" height="{areaheight}" color="{clrBlackTrans}" />
             <drawrectangle condition="gt({numtimers}, 1)" x="{areawidth} / 5" y="0" width="{areawidth} / 5 - 5" height="{areaheight}" color="{clrBlackTrans}" />
@@ -211,7 +211,7 @@
             <drawimage condition="lt({customint3}, 12000)" imagetype="skinpart" path="tachohands/pv_{customint3}" x="{areawidth}*0.81" y="3%" width="18%" height="98%"/>
         </area>
         <area condition="{showpv}" x="88%" y="67%" width="11%" height="24%" layer="4">
-            <drawtext align="center" y="80%" font="{regular}" fontsize="12%" color="{clrWhite}" text="PV power: {customint3} W" />
+            <drawtext align="center" y="80%" font="{regular}" fontsize="12%" color="{clrWhite}" text="PV power: {customint5} W" />
             <drawtext align="center" y="90%" font="{regular}" fontsize="12%" color="{clrWhite}" text="PV energy: {customint4} kWh" />
         </area>
         <area x="64%" y="67%" width="11%" height="24%" layer="4">
