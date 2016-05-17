@@ -72,16 +72,14 @@
     {timers[channelid]}          ChannelID of channel
     {timers[channellogoexists]}  true if channel logo exists
     -->
-    <timers delay="1500" shifttime="700" startx="40%" starty="60%" shiftmode="slowed">
-        <area x="40%" y="50%" width="55%" height="14%" layer="1">
+    <timers delay="1500" shifttime="700" startx="62%" starty="60%" shiftmode="slowed">
+        <area x="62%" y="50%" width="55%" height="14%" layer="1">
             <drawrectangle condition="gt({numtimers}, 0)" x="0" y="0" width="{areawidth} / 5 - 5" height="{areaheight}" color="{clrBlackTrans}" />
             <drawrectangle condition="gt({numtimers}, 1)" x="{areawidth} / 5" y="0" width="{areawidth} / 5 - 5" height="{areaheight}" color="{clrBlackTrans}" />
             <drawrectangle condition="gt({numtimers}, 2)" x="{areawidth} * 2 / 5" y="0" width="{areawidth} / 5 - 5" height="{areaheight}" color="{clrBlackTrans}" />
-            <drawrectangle condition="gt({numtimers}, 3)" x="{areawidth} * 3 / 5" y="0" width="{areawidth} / 5 - 5" height="{areaheight}" color="{clrBlackTrans}" />
-            <drawrectangle condition="gt({numtimers}, 4)" x="{areawidth} * 4 / 5" y="0" width="{areawidth} / 5 - 5" height="{areaheight}" color="{clrBlackTrans}" />
         </area>
-        <area x="40%" y="50%" width="55%" height="14%" layer="1">
-            <loop name="timers" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/5" rowheight="{areaheight}" overflow="cut">
+        <area x="62%" y="50%" width="33%" height="14%" layer="1">
+            <loop name="timers" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/3" rowheight="{areaheight}" overflow="cut">
                 <drawimage condition="{timers[recording]}" animtype="blink" animfreq="1000" imagetype="icon" path="ico_rec_on" x="6%" y="73%" width="20%" height="20%"/>
                 <drawimage  cache="true" name="logo" imagetype="channellogo" path="{timers[channelid]}" width="{columnwidth}-15" height="37%" align="center" y="10" />
                 <drawtextbox x="5" y="{height(logo)} + 10" width="{columnwidth}-10" align="center" maxlines="2" font="{light}" fontsize="15%" color="{clrWhite}" text="{timers[title]}" />
@@ -89,6 +87,21 @@
             </loop>
         </area>
     </timers>
+
+    <lastrecordings delay="1500" shifttime="700" startx="40%" starty="60%" shiftmode="slowed">
+        <area x="40%" y="50%" width="55%" height="14%" layer="1">
+            <drawrectangle x="0" y="0" width="{areawidth} / 5 - 5" height="{areaheight}" color="{clrBlackTrans}" />
+            <drawrectangle x="{areawidth} / 5" y="0" width="{areawidth} / 5 - 5" height="{areaheight}" color="{clrBlackTrans}" />
+        </area>
+        <area x="40%" y="50%" width="22%" height="14%" layer="1">
+            <loop name="recordings" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/2" rowheight="{areaheight}" overflow="cut">
+                <drawimage name="checkicon" imagetype="icon" path="check" width="{columnwidth}-15" height="37%" align="center" y="10" />
+                <drawtext  align="center" y="75%" font="{light}" fontsize="20%" color="{clrWhite}" text="{recordings[date]}   {recordings[time]}" />
+                <drawtextbox condition="empty{recordings[seriesname]}" x="10" y="{height(checkicon)} + 10" width="{columnwidth} - 10" maxlines="2" font="{light}" fontsize="15%" color="{clrWhite}" text="{recordings[title]}" />
+                <drawtextbox condition="isset{recordings[seriesname]}" x="10" y="{height(checkicon)} + 10" width="{columnwidth} - 10" maxlines="2" font="{light}" fontsize="15%" color="{clrWhite}" text="{recordings[seriesname]}" />
+            </loop>
+        </area>
+    </lastrecordings>
 
     <!-- Available Variables discusage:
     {freetime}                available disc capacity in hh:mm
