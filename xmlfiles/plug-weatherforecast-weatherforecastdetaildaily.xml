@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE menuplugin SYSTEM "../../../dtd/displaymenuplugin.dtd">
 
-<menuplugin x="0" y="0" width="100%" height="100%" fadetime="0" scaletvx="55%" scaletvy="10%" scaletvwidth="40%" scaletvheight="40%">
+<menuplugin x="0" y="0" width="100%" height="100%" fadetime="0" scaletvx="54%" scaletvy="10%" scaletvwidth="36%" scaletvheight="36%" >
     <scrollbar>
-        <area x="52%" y="10%" width="2%" height="80%" layer="2">
-            <drawimage imagetype="skinpart" path="scrollbarback" x="0" y="0" width="100%" height="100%"/>
-        </area>
-        <area x="52%" y="10%" width="2%" height="80%" layer="3">
-            <drawimage imagetype="skinpart" path="scrollbar" x="0" y="{areaheight} * {offset} / 1000" width="100%" height="{areaheight} * {height} / 1000"/>
-        </area>
+		<area condition="lt({height},1000)" x="51%" y="10%" width="8%" height="80%" layer="3">
+			 <drawimage x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="scrollbarback" />
+			 <drawimage x="15%" y="{areaheight} * {offset} / 1000" width="{areawidth}*0.1" height="{areaheight} * {height} / 1000" imagetype="skinpart" path="scrollbar" />
+		</area>
     </scrollbar>
 
     <!-- Available Variables in detailheader and tab:
@@ -43,13 +41,13 @@
         <area x="1%" y="10%" width="50%" height="80%" layer="2">
             <drawimage imagetype="skinpart" path="displaymendetailback" x="0" y="0" width="100%" height="100%" />
         </area>
-        <area x="55%" y="52%" width="43%" height="38%" layer="2">
+        <area x="54%" y="47%" width="43%" height="43%" layer="2">
             <drawimage imagetype="skinpart" path="displaymenucurrentback" x="0" y="0" width="100%" height="100%"/>
         </area>
-        <area x="55%" y="52%" width="43%" height="38%" layer="3">
+        <area x="54%" y="47%" width="43%" height="43%" layer="3">
             <drawimage imagetype="icon" path="{icon}" align="center" y="10" width="{areaheight}/2" height="{areaheight}/2"/>
         </area>
-        <area x="55%" y="52%" width="43%" height="38%" layer="4">
+        <area x="54%" y="47%" width="43%" height="43%" layer="4">
             <drawtextbox name="summary" x="5" y="55%" width="{areawidth}-10" align="center" height="50%" font="{regular}" fontsize="12%" color="{clrWhite}" text="{summary}" />
         </area>
     </detailheader>

@@ -72,7 +72,7 @@
     {timers[channelid]}          ChannelID of channel
     {timers[channellogoexists]}  true if channel logo exists
     -->
-    <timers delay="1500" shifttime="700" startx="62%" starty="60%" shiftmode="slowed">
+    <timers delay="1500" fadetime="700" startx="62%" starty="60%">
         <area x="62%" y="50%" width="55%" height="14%" layer="1">
             <drawrectangle condition="gt({numtimers}, 0)" x="0" y="0" width="{areawidth} / 5 - 5" height="{areaheight}" color="{clrBlackTrans}" />
             <drawrectangle condition="gt({numtimers}, 1)" x="{areawidth} / 5" y="0" width="{areawidth} / 5 - 5" height="{areaheight}" color="{clrBlackTrans}" />
@@ -88,7 +88,7 @@
         </area>
     </timers>
 
-    <lastrecordings delay="1500" shifttime="700" startx="40%" starty="60%" shiftmode="slowed">
+    <lastrecordings delay="1500" fadetime="700" startx="40%" starty="60%">
         <area x="40%" y="50%" width="55%" height="14%" layer="1">
             <drawrectangle x="0" y="0" width="{areawidth} / 5 - 5" height="{areaheight}" color="{clrBlackTrans}" />
             <drawrectangle x="{areawidth} / 5" y="0" width="{areawidth} / 5 - 5" height="{areaheight}" color="{clrBlackTrans}" />
